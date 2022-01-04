@@ -1,19 +1,13 @@
 <template>
   <MDBRow style="padding-left: 25px; padding-right: 25px">
-    <MDBCol col="3">Projects</MDBCol>
+    <MDBCol col="3">Contact</MDBCol>
     <MDBCol col="9" style="display: flex; flex-wrap: wrap;" >
-     <div class="bg-image"  v-bind:style="{ 'background-image': 'url(' +'svgs/linkedin.svg'  + ')' }">
+    <a :href="contact.link" v-for="contact in contacts" :key="contact.link" >
+      <div class="bg-image"  v-bind:style="{ 'background-image': 'url(' + contact.image  + ')' }">
          
           </div>
-      <div class="bg-image"  v-bind:style="{ 'background-image': 'url(' +'svgs/github.svg'  + ')' }">
-         
-          </div>
-          <div class="bg-image"  v-bind:style="{ 'background-image': 'url(' +'svgs/fiverr.svg'  + ')' }">
-         
-          </div>
-           <div class="bg-image"  v-bind:style="{ 'background-image': 'url(' +'svgs/upwork.svg'  + ')' }">
-         
-          </div>
+      </a> 
+     
          
     </MDBCol>
   
@@ -28,8 +22,34 @@ export default {
    components: {
   MDBCol, MDBRow, 
   },
-  
+  data() {
+  return {
+    contacts : [
+    {
+      link : "https://www.linkedin.com/in/michael-opoku-98a1221a5/",
+      image: "svgs/linkedin.svg"
+    },
+      {
+      link : "https://github.com/NUACHE",
+      image: 'svgs/github.svg'
+    },
+     {
+      link : " https://www.fiverr.com/nuache",
+      image: 'svgs/fiverr.svg'
+    },
+     {
+      link : "https://www.upwork.com",
+      image: 'svgs/upwork.svg'
+    },
+    ]
+  }
 }
+}
+
+
+
+
+
 </script>
 
 <style>

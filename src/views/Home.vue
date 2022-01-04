@@ -20,7 +20,7 @@
       >
       </a>
 
-      <a href="mailto:name@email.com">
+      <a href="mailto:michaelopoku790@gmail.com">
         <MDBBtn color="primary" style="margin-bottom: 4px"
         ><MDBIcon icon="paper-plane" iconStyle="far" style="padding-right: 8px"  />
         Email</MDBBtn
