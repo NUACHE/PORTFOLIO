@@ -12,13 +12,13 @@
     <div
       style="position: relative;  margin-top: 70px; top: 70px display: flex; padding-right: 10px;"
     >
-     <a download="logo" href="logo.png"  target="_blank">
+     <!-- <a download="logo" href="logo.png"  target="_blank">
       <MDBBtn outline="primary" style="margin-right: 10px; margin-bottom: 4px" 
         >
        View Resume
         </MDBBtn
       >
-      </a>
+      </a> -->
 
       <a href="mailto:michaelopoku790@gmail.com">
         <MDBBtn color="primary" style="margin-bottom: 4px"

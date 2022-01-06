@@ -106,7 +106,7 @@ export default {
             "UelloSend is a BULK SMS solution platform powered by UviTech, Inc.",
           image: "uellosend.png",
           icons: ["google-play", "chrome"],
-          link: ""
+          link: "https://www.uellosend.uvitechgh.com"
         },
         {
           projectName: "ExPal",
@@ -124,6 +124,7 @@ export default {
             "Cornerstone is a free giving and engagement app for all organizations.",
           image: "cornerstone.png",
           icons: ["google-play", "app-store-ios"],
+          link: "https://play.google.com/store/apps/details?id=com.cornerstone.zenoteck"
         },
          {
           projectName: "Smart Home",
@@ -131,6 +132,7 @@ export default {
             "A flutter cloned ui design of a smart home application.",
           image: "smarthome.png",
           icons: ["github",],
+          link: "https://github.com/NUACHE/Smart-Home-app"
         },
          {
           projectName: "Yellow Taxi",
@@ -138,6 +140,7 @@ export default {
             "A flutter cloned ui design of a taxi booking application.",
           image: "taxiApp.png",
           icons: ["github",],
+          link: "https://github.com/NUACHE/WR_preview"
         },
       ],
     };
@@ -150,7 +153,7 @@ export default {
       console.log(name);
     },
       viewProject(name) {
-   
+        window.open(name, '_blank');
       console.log(name);
     },
   },
