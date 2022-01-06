@@ -2,7 +2,7 @@
   <MDBRow style="padding-left: 25px; padding-right: 25px">
     <MDBCol col="3">Experience</MDBCol>
     <MDBCol col="1"> </MDBCol>
-    <MDBCol col="4" v-for="experience in experiences" :key="experience.company">
+    <MDBCol md="4" v-for="experience in experiences" :key="experience.company">
       <ExperienceCard
         :position="experience.position"
         :company="experience.company"
@@ -33,18 +33,19 @@
     </MDBModalHeader>
     <MDBModalBody>
       <MDBRow>
-        <MDBCol col="4" v-for="project in type" :key="project.projectName">
+        <MDBCol  md="3" v-for="project in type" :key="project.projectName">
           <ProjectCard
             :projectName="project.projectName"
             :description="project.description"
             :image="project.image"
+            v-on:viewProject="viewProject(project.link)"
           >
             <MDBIcon
               v-for="icon in project.icons"
               :key="icon"
               :icon="icon"
               iconStyle="fab"
-              style="display: inline-block; margin-right: 15px"
+              style="display: inline-block; margin-right: 15px;"
             />
           </ProjectCard>
         </MDBCol>
@@ -105,6 +106,7 @@ export default {
             "UelloSend is a BULK SMS solution platform powered by UviTech, Inc.",
           image: "uellosend.png",
           icons: ["google-play", "chrome"],
+          link: ""
         },
         {
           projectName: "ExPal",
@@ -112,6 +114,7 @@ export default {
             "EXPal is a  platform that enables you to exchange virtual currencies.",
           image: "expal.png",
           icons: ["google-play", "chrome"],
+          link: "https://expal.uvitechgh.com"
         },
       ],
       FreeLance: [
@@ -144,6 +147,10 @@ export default {
       console.log("open modal");
       this.type = name === 'UvitechGH' ? this.UvitechGH : this.FreeLance;
       this.exampleModal = true;
+      console.log(name);
+    },
+      viewProject(name) {
+   
       console.log(name);
     },
   },

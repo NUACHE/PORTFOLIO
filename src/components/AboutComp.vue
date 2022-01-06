@@ -1,21 +1,15 @@
 <template>
   <MDBRow style="padding-left: 25px; padding-right: 25px">
-    <MDBCol col="3">About Me</MDBCol>
+    <MDBCol col="3">Tools</MDBCol>
     <MDBCol col="9">
+     
+    
       <MDBRow>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. molestiae in
-        labore corrupti eius?
-      </MDBRow>
-      <MDBRow>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt omnis
-        atque maiores eius voluptate officiis!
-      </MDBRow>
-      <MDBRow>
-        <a
+        <p
           href="#"
           class="text-decoration-none"
           style="padding-right: 0px; padding-left: 0px; color: #7055a0"
-          >Read more</a
+          >What I Work With</p
         >
       </MDBRow>
 

@@ -4,6 +4,7 @@
       box-shadow: none;
       -webkit-box-shadow: 0 0 5px rgb(151, 151, 151);
       -moz-box-shadow: 0 0 5px rgb(151, 151, 151);
+      margin-top: 15px;
     "
   >
     <MDBCardBody>
@@ -13,13 +14,18 @@
          
           </div>
           <div
-            style="projectName: relative; margin-top: 10px; text-align: justify"
+            style="position: relative; margin-top: 10px; text-align: justify"
           >
             <div>{{ projectName }}</div>
-            <div style="font-size: 15px; font-weight: 100; width: 250px  ">{{ description }}</div>
+            <div style="font-size: 15px; font-weight: 100;   ">{{ description }}</div>
           </div>
         </div>
       </div>
+
+      
+
+      
+       
 
      
     </MDBCardBody>
@@ -63,7 +69,7 @@ export default {
   methods :{
     open(){
      
-      this.$emit('openModal')
+      this.$emit('viewProject')
     }
   },
 
