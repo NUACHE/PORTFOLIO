@@ -50,6 +50,7 @@
           </ProjectCard>
         </MDBCol>
       </MDBRow>
+      
     </MDBModalBody>
   </MDBModal>
 </template>
@@ -111,19 +112,27 @@ export default {
         {
           projectName: "ExPal",
           description:
-            "EXPal is a  platform that enables you to exchange virtual currencies.",
+            "EXPal is a platform that enables you to exchange virtual currencies.",
           image: "expal.png",
           icons: ["google-play", "chrome"],
           link: "https://expal.uvitechgh.com"
         },
       ],
       FreeLance: [
+         {
+          projectName: "My Portfolio",
+          description:
+            "Access the github repo to my portfolio, enjoy !",
+          image: "user.png",
+          icons: ["chrome","github"],
+          link: "https://github.com/NUACHE/PORTFOLIO"
+        },
         {
           projectName: "Cornerstone Giving",
           description:
             "Cornerstone is a free giving and engagement app for all organizations.",
           image: "cornerstone.png",
-          icons: ["google-play", "app-store-ios"],
+          icons: ["app-store-ios","google-play"],
           link: "https://play.google.com/store/apps/details?id=com.cornerstone.zenoteck"
         },
          {
