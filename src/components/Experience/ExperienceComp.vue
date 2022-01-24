@@ -119,6 +119,14 @@ export default {
         },
       ],
       FreeLance: [
+        {
+          projectName: "WAVE",
+          description:
+            "A Podcast App.  #100DaysOfCode",
+          image: "wave.png",
+          icons: ["github"],
+          link: "https://github.com/NUACHE/WAVE"
+        },
          {
           projectName: "My Portfolio",
           description:
